@@ -12,14 +12,18 @@
 <body>
   <h1>Qwerty</h1>
   <div class="search-container">
-    <input type="text" id="searchInput" placeholder="Search..." />
+      <div class="search-wrapper">
+          <input type="text" id="searchInput" placeholder="Search..." />
+          <button id="clearSearch" class="clear-btn" title="Clear search">X</button>
+      </div>
   </div>
 
   <header>
     <div class="categories">
       <button class="category-btn" data-category="All">All</button>
-      <button class="category-btn" data-category="Game">Game</button>
-      <button class="category-btn" data-category="Project">Project</button>
+      <button class="category-btn" data-category="Game">Games</button>
+      <button class="category-btn" data-category="Project,Asset">Projects/Asset</button>
+      <button class="category-btn" data-category="Bookmarks">Bookmarks</button>
     </div>
   </header>
   <div id="loader" class="loader hidden">Loading...</div>
@@ -28,18 +32,17 @@
 
   <div id="modal" class="modal">
     <div class="modal-content">
+      <button id="bookmarkToggle" class="bookmark-btn"><i class="fas fa-bookmark"></i></button>
       <img id="modalIcon" src="" alt="Icon" />
       <h2 id="modalTitle"></h2>
       <p id="modalDesc"></p>
       <a id="modalDownload" href="#" target="_blank">Download</a>
     </div>
   </div>
-
   <footer class="footer">
     <p>Follow me:</p>
     <div class="social-icons">
       <a href="https://youtube.com/@qwertydev24?si=VKc7w8DtaoQ1JMwi" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://github.com/QwertyDev-git" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://www.tiktok.com/@qwertydevind?_t=ZS-8w4fHGXPLBB&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
     </div>
   </footer>
